@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Cidade</th>
+        <th>Clima</th>
+    </tr>
+    <tr *ngFor="let cidade of cidades">
+        <td>{{cidade.nome}}</td>
+        <td><a href="/weather/{{cidade.id}}">Ver clima</a></td>
+    </tr>
+</table>
+
+<button (click)="cadastrarCidade()">Cadastrar nova cidade</button>
