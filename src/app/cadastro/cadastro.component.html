@@ -1,0 +1,7 @@
+<form #cadastro = "ngForm" (ngSubmit) = "onClickSubmit(cadastro.value)" >
+    <input type = "text" name = "nome" placeholder = "Cidade" ngModel>
+    <br/>
+    <input type = "text" name = "pais" placeholder = "Sigla do País" ngModel>
+    <br/>
+    <input type = "submit" value = "submit">
+  </form>
